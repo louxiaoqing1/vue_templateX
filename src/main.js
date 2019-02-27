@@ -5,7 +5,8 @@ import Vue from 'vue'
 import ElementUI from 'element-ui';
 import './assets/element-variables.scss'
 require('./assets/iconfont/material-icons.css');
-
+import './assets/styles/reset.css'
+import './assets/styles/border.css'
 import App from './App'
 import router from './router'
 

@@ -7,12 +7,10 @@
 
 <script>
 import headerX from "./../components/template/headerX";
-import swiper from "./../components/template/swiper";
 export default {
   name: "home",
   components: {
     headerX,
-    swiper
   },
   data() {
     return {

@@ -31,22 +31,22 @@ export default {
 </script>
 
 <style lang="stylus" scoped>
-  @import '~@/assets/styles/varibles.styl'
+  @import '~styles/varibles.styl'
   .header
     display: flex
-    line-height: .86rem
+    line-height: .8rem
     width: 7.5rem
     background: $bgcolor
     color: #fff
     .header-left
       width: .5rem
       float:left
-        .back-icon
-            text-align: center 
-            font-size: .2rem
+      .back-icon
+          text-align: center
+          font-size: .4rem
     .header-input
       flex: 1
-      height: .64rem
+      height: .6rem
       line-height: .64rem
       margin-top: .11rem
       margin-left: .1rem

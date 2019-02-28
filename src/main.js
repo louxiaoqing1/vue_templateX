@@ -4,9 +4,9 @@ import Vue from 'vue'
 
 import ElementUI from 'element-ui';
 import './assets/element-variables.scss'
-import './assets/styles/reset.css'
-import './assets/styles/border.css'
-import './assets/styles/iconfont.css'
+import 'styles/reset.css'
+import 'styles/border.css'
+import 'styles/iconfont.css'
 import App from './App'
 import router from './router'
 

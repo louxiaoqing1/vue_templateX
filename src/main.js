@@ -4,6 +4,8 @@ import Vue from 'vue'
 
 import ElementUI from 'element-ui';
 import './assets/element-variables.scss'
+import VueAwesomeSwiper from 'vue-awesome-swiper'
+import 'swiper/dist/css/swiper.css'
 import 'styles/reset.css'
 import 'styles/border.css'
 import 'styles/iconfont.css'
@@ -14,7 +16,7 @@ import router from './router'
 
 Vue.use(ElementUI);
 Vue.config.productionTip = false
-
+Vue.use(VueAwesomeSwiper)
 import axios from 'axios'
 Vue.prototype.axios = axios;
 // axios.defaults.baseURL = "http://10.2.98.10:8080"

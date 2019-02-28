@@ -1,16 +1,18 @@
 <template>
-  <div class="index">
-    我是home界面
+  <div>
+    <headerX></headerX>
+    <swiper></swiper>
   </div>
 </template>
 
 <script>
 import headerX from "./../components/template/headerX";
-
+import swiper from "./../components/template/swiper";
 export default {
   name: "home",
   components: {
-    headerX
+    headerX,
+    swiper
   },
   data() {
     return {

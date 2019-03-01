@@ -46,10 +46,7 @@ z <template>
     }
     .icon-img:{
       position: absolute;
-      top: 0;
-      left: 0:
-      right: 0;
-      bottom: 100px;
+      margin: 0，0，0，100px
     }
 
 </style>

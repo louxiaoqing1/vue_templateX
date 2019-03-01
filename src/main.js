@@ -12,7 +12,6 @@ import router from './router'
 import FastClick from 'fastclick'
 
 
-
 Vue.use(ElementUI);
 Vue.config.productionTip = false
 FastClick.attach(document.body);

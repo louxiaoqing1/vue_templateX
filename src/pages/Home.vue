@@ -1,19 +1,22 @@
 <template>
   <div>
+    <Login></Login>
     <headerX></headerX>
-    <home-icons></home-icons>
+    <icons></icons>
   </div>
 </template>
 
 <script>
+import Login from "./../components/template/Login"
 import headerX from "./../components/template/headerX";
-import HomeIcons from "./../components/template/icon";
+import icons from "./../components/template/icons";
 export default {
   name: "home",
   components: {
     headerX,
-    HomeIcons
-  },
+    login,
+    icons
+  },   
   data() {
     return {
 

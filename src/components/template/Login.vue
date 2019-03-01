@@ -21,14 +21,14 @@
       </el-carousel-item>
     </el-carousel>
   </div>
-
-
+  
 </div>
 
 </template>
 <script>
+import icons from "./../components/icons";
 export default {
-  name:"login",
+  name:"login", 
   data(){
     return{
       imgList:[

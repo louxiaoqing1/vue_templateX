@@ -5,8 +5,7 @@
 </template>
 
 <script>
-import {time} from './../../assets/tools'
-
+import {time} from './../assets/tools'
 
 export default {
   name: "headerX",

@@ -1,13 +1,14 @@
 <template>
   <div>
-    <Login></Login>
+
     <headerX></headerX>
+    <login></login>
     <icons></icons>
   </div>
 </template>
 
 <script>
-import Login from "./../components/template/Login"
+import login from "./../components/template/Login"
 import headerX from "./../components/template/headerX";
 import icons from "./../components/template/icons";
 export default {

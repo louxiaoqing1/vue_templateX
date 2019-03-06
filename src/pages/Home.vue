@@ -11,21 +11,15 @@
 import login from "./../components/template/Login"
 import headerX from "./../components/template/headerX";
 import icons from "./../components/template/icons";
+import Recommend from "./../components/template/Recommend";
 export default {
   name: "home",
   components: {
     headerX,
     login,
-    icons
+    icons,
+    Recommend
   },   
-  data() {
-    return {
-
-    };
-  },
-  methods: {},
-  mounted() {
-  }
 };
 </script>
 

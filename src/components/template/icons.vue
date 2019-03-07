@@ -59,11 +59,10 @@ z <template>
 
 <style lang="stylus" scoped>
     .icons{
-
         height: 0;
         width: 400px;
         padding-bottom: 200px;
-        
+        margin-top: 10px
     }
     .icon{
         float: left;

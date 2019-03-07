@@ -4,6 +4,8 @@
     <headerX></headerX>
     <login></login>
     <icons></icons>
+    <recommend></recommend>
+    <weekend></weekend>
   </div>
 </template>
 
@@ -11,14 +13,16 @@
 import login from "./../components/template/Login"
 import headerX from "./../components/template/headerX";
 import icons from "./../components/template/icons";
-import Recommend from "./../components/template/Recommend";
+import recommend from "./../components/template/Recommend";
+import weekend from "./../components/template/Weekend";
 export default {
   name: "home",
   components: {
     headerX,
     login,
     icons,
-    Recommend
+    recommend,
+    weekend
   },   
 };
 </script>

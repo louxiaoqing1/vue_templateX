@@ -8,13 +8,13 @@
         <span class="iconfont">&#xe632;</span>
             输入城市/景点/游玩主题
       </div>
-      <div class="header-right">城市
+      <div class="header-right">{{this.city}}
         <span class="iconfont arrow-icon">&#xe6aa;</span>
       </div>
     </div>
   <div class="block">
     <el-carousel :interval="5000" autoplay  height="120px">
-      <el-carousel-item v-for="item in imgList" :key="item.name">
+      <el-carousel-item v-for="item in List" :key="item.name">
         <img class="img" :src='item.url' :alt='item.name'/>
       </el-carousel-item>
     </el-carousel>
@@ -26,6 +26,9 @@
 <script>
 export default {
   name:"login", 
+  props: {
+    city: String
+  },
   data(){
     return{
       imgList:[

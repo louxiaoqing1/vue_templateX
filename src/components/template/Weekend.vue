@@ -43,15 +43,14 @@ export default {
 <style lang="stylus" scoped>
     @import '~styles/mixins.styl'
     .title{
-        margin-top:5px;
         line-height: 25px;
         background:#ccc;
         text-indent: 5px;
     }
     .item-img-wrapper{
         overflow: hidden;
-        width: 380px;
         height: 130px;
+        width: 380px;
     }
     .item-img{
        width: 100%;

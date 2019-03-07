@@ -1,6 +1,5 @@
 <template>
   <div class="home-header">
-   我是header公共组件
   </div>
 </template>
 

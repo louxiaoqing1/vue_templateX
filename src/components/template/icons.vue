@@ -1,51 +1,9 @@
 z <template>
-    <div class="icons">
-        <div class="icon">
+    <div class="icons">        
+        <div class="icon" v-for="item of iconList" :key="item.id">
             <div class="icon-img">
-                <img class="icon-img-content" src='https://ss2.bdstatic.com/70cFvnSh_Q1YnxGkpoWK1HF6hhy/it/u=3071027899,2821326239&fm=26&gp=0.jpg'/>
-                <span class="icon-title-name"> 热门景点</span>
-            </div>
-        </div>        
-        <div class="icon">
-            <div class="icon-img">
-                <img class="icon-img-content" src='https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=3287249329,3074687661&fm=26&gp=0.jpg'/>
-                <span class="icon-title-name"> 热门景点</span>
-            </div>
-        </div> 
-        <div class="icon">
-            <div class="icon-img">
-                <img class="icon-img-content" src='https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=2395496933,1048204219&fm=26&gp=0.jpg'/>
-                <span class="icon-title-name"> 热门景点</span>
-            </div>
-        </div> 
-        <div class="icon">
-            <div class="icon-img">
-                <img class="icon-img-content" src='https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=1624641722,2539712386&fm=26&gp=0.jpg'/>
-                <span class="icon-title-name"> 热门景点</span>
-            </div>
-        </div> 
-        <div class="icon">
-            <div class="icon-img">
-                <img class="icon-img-content" src='https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=1624641722,2539712386&fm=26&gp=0.jpg'/>
-                <span class="icon-title-name"> 热门景点</span>
-            </div>
-        </div> 
-        <div class="icon">
-            <div class="icon-img">
-                <img class="icon-img-content" src='https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=3690319275,2860222045&fm=200&gp=0.jpg'/>
-                <span class="icon-title-name"> 热门景点</span>
-            </div>
-        </div> 
-        <div class="icon">
-            <div class="icon-img">
-                <img class="icon-img-content" src='https://ss2.bdstatic.com/70cFvnSh_Q1YnxGkpoWK1HF6hhy/it/u=3071027899,2821326239&fm=26&gp=0.jpg'/>
-                <span class="icon-title-name"> 热门景点</span>
-            </div>
-        </div>  
-        <div class="icon">
-            <div class="icon-img">
-                <img class="icon-img-content" src='https://ss2.bdstatic.com/70cFvnSh_Q1YnxGkpoWK1HF6hhy/it/u=3071027899,2821326239&fm=26&gp=0.jpg'/>
-                <span class="icon-title-name"> 热门景点</span>
+                <img class="icon-img-content" :src="item.imgurl"/>
+                <span class="icon-title-name"> {{item.desc}}</span>
             </div>
         </div> 
     </div>
@@ -53,7 +11,44 @@ z <template>
 
  <script>
      export default{
-        name: 'HomeIcons'
+        name: 'Icons',
+        data() {
+        return{
+                iconList: [{
+                id: '0001',
+                imgurl:'http://img1.qunarzz.com/piao/fusion/1611/54/ace00878a52d9702.png',
+                desc:'景点门票'
+            },{
+                id: '0002',
+                imgurl:'http://img1.qunarzz.com/piao/fusion/1711/df/86cbcfc533330d02.png',
+                desc:'滑雪季'
+            },{
+                id: '0003',
+                imgurl:'http://img1.qunarzz.com/piao/fusion/1710/a6/83f636bd75ae6302.png',
+                desc:'泡温泉'
+            },{
+                id: '0004',
+                imgurl:'http://img1.qunarzz.com/piao/fusion/1611/35/2640cab202c41b02.png',
+                desc:'动植园'
+            },{
+                id: '0005',
+                imgurl:'http://img1.qunarzz.com/piao/fusion/1611/d0/e09575e66f4aa402.png',
+                desc:'游乐园'
+            },{
+                id: '0006',
+                imgurl:'http://img1.qunarzz.com/piao/fusion/1611/59/569d3c096e542502.png',
+                desc:'必游榜单'
+            },{
+                id: '0007',
+                imgurl:'http://img1.qunarzz.com/piao/fusion/1611/17/4bd370f3eb1acd02.png',
+                desc:'演出'
+            },{
+                id: '0008',
+                imgurl:'http://img1.qunarzz.com/piao/fusion/1611/7f/b1ea3c8c7fb6db02.png',
+                desc:'城市观光'
+            }]
+        }
+    }
     }
  </script>
 
@@ -62,7 +57,7 @@ z <template>
         height: 0;
         width: 400px;
         padding-bottom: 200px;
-        margin-top: 10px
+        margin-top: 10px;
     }
     .icon{
         float: left;
@@ -83,12 +78,12 @@ z <template>
     .icon-img-content{ 
         display: block;
         maigin: 0 auto;
-        height: 80%;
-        width 100%;
+        height: 85%;
+        width: 85%;
     }
     .icon-title-name{
         display inline-block;
-        width 100%;
+        width:80%;
         text-align: center;
         padding 0 ;
         margin  0;

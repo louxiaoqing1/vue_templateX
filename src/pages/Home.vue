@@ -1,7 +1,7 @@
 <template>
   <div>
     <headerX></headerX>
-    <login></login>
+    <login :city="city"></login>
     <icons></icons>
     <recommend></recommend>
     <weekend></weekend>
@@ -14,7 +14,7 @@ import headerX from "./../components/template/headerX";
 import icons from "./../components/template/icons";
 import recommend from "./../components/template/Recommend";
 import weekend from "./../components/template/Weekend";
-import asios from 'axios'
+import axios from 'axios'
 export default {
   name: "home",
   components: {
@@ -22,17 +22,22 @@ export default {
     login,
     icons,
     recommend,
-    weekend
-  },   
+    weekend,
+  },
+  data () {
+    return{
+      city: ''
+    }
+  },
   methods: {
     getHomeInfo () {
       axios.get('/api/index.json')
-        .then(this,getHomeInfoSucc)
+        .then(this.getHomeInfoSucc)
     },
-    getHomeInfoSucc () {
+    getHomeInSucc (res) {
       console.log(res)
     }
-  },
+  },   
   mounted () {
     this.getHomeInfo()
   }

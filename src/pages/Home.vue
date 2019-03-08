@@ -29,14 +29,13 @@ export default {
       city: ''
     }
   },
-  methods: {
+  methods:{
     getHomeInfo () {
-      axios.get('/api/index.json')
-        .then(this.getHomeInfoSucc)
+      axios.get('/static/mock/index.json')
+        .then((result) => {
+          console.log(result)
+        })
     },
-    getHomeInSucc (res) {
-      console.log(res)
-    }
   },   
   mounted () {
     this.getHomeInfo()

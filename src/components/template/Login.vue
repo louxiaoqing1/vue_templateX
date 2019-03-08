@@ -14,7 +14,7 @@
     </div>
   <div class="block">
     <el-carousel :interval="5000" autoplay  height="120px">
-      <el-carousel-item v-for="item in List" :key="item.name">
+      <el-carousel-item v-for="item in imgList" :key="item.name">
         <img class="img" :src='item.url' :alt='item.name'/>
       </el-carousel-item>
     </el-carousel>

@@ -17,8 +17,8 @@ Vue.config.productionTip = false
 FastClick.attach(document.body);
 import axios from 'axios'
 Vue.prototype.axios = axios;
-// axios.defaults.baseURL = "http://10.2.98.10:8080"
-axios.defaults.baseURL = "http://10.2.98.231:8012"
+axios.defaults.baseURL = "http://localhost:8080/"
+// axios.defaults.baseURL = "http://10.2.98.231:8012"
 
 /* eslint-disable no-new */
 new Vue({

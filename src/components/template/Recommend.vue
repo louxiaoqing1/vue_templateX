@@ -20,26 +20,6 @@ export default {
     props:{
         list: Array
     },
-    data() {
-        return{
-                recommendList: [{
-                id: '0001',
-                imgurl:'https://ss3.bdstatic.com/70cFv8Sh_Q1YnxGkpoWK1HF6hhy/it/u=3739589073,2196410818&fm=27&gp=0.jpg',
-                title: '大连圣亚海洋馆',
-                desc:'浪漫大连首站，浪漫的海洋主题乐园'
-            },{
-                id: '0002',
-                imgurl:'https://ss3.bdstatic.com/70cFv8Sh_Q1YnxGkpoWK1HF6hhy/it/u=3739589073,2196410818&fm=27&gp=0.jpg',
-                title: '大连圣亚海洋馆',
-                desc:'浪漫大连首站，浪漫的海洋主题乐园'
-            },{
-                id: '0003',
-                imgurl:'https://ss3.bdstatic.com/70cFv8Sh_Q1YnxGkpoWK1HF6hhy/it/u=3739589073,2196410818&fm=27&gp=0.jpg',
-                title: '大连圣亚海洋馆',
-                desc:'浪漫大连首站，浪漫的海洋主题乐园'
-            }]
-        }
-    }
 }
 </script>
 <style lang="stylus" scoped>

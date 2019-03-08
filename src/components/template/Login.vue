@@ -8,9 +8,11 @@
         <span class="iconfont">&#xe632;</span>
             输入城市/景点/游玩主题
       </div>
+      <router-link to="/city">
       <div class="header-right">{{this.city}}
         <span class="iconfont arrow-icon">&#xe6aa;</span>
       </div>
+      </router-link>
     </div>
   <div class="block">
     <el-carousel :interval="5000" autoplay  height="120px">
@@ -94,6 +96,7 @@ export default {
       width: 2rem
       float: right
       margin-right:-0.6rem
+      color: #fff
       .arrow-icon
         margin-left: -.09rem
         font-size: rem

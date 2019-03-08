@@ -2,9 +2,9 @@
   <div>
     <headerX></headerX>
     <login :city="city"></login>
-    <icons></icons>
-    <recommend></recommend>
-    <weekend></weekend>
+    <icons :list="iconList"></icons>
+    <recommend :list="recommendList"></recommend>
+    <weekend :list="weekendList"></weekend>
   </div>
 </template>
 
@@ -26,16 +26,28 @@ export default {
   },
   data () {
     return{
-      city: ''
+      city: '',
+      iconList: [],
+      recommendList: [],
+      weekendList: []
     }
   },
   methods:{
     getHomeInfo () {
       axios.get('/static/mock/index.json')
-        .then((result) => {
-          console.log(result)
-        })
+        .then(this.getHomeInfoSucc)
     },
+    getHomeInfoSucc(res) {
+        res = res.data
+        if(res.ret && res.data){
+          const data = res.data
+            this.city = data.city
+            this.iconList = data.iconList
+            this.recommendList = data.recommendList
+            this.weekendList = data.weekendList
+        }
+        console.log(res)
+      }
   },   
   mounted () {
     this.getHomeInfo()

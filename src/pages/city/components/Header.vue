@@ -16,6 +16,7 @@ export default {
  <style lang="stylus" scoped>
  @import '~styles/varibles.styl'
     .header{
+        width: 400px;
         position : relative;
         overflow:hidden;
         height: 40px;

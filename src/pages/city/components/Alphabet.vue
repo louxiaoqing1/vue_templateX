@@ -43,7 +43,7 @@ export default {
             if (this.touchStatus) {
                 const startY = this.$refs['A'][0].offsetTop
                 const touchY = e.touches[0].clientY
-                console.log(touchY)
+                console.log()
             }
         },
         handleTouchEnd () {

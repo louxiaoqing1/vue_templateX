@@ -9,7 +9,8 @@
             输入城市/景点/游玩主题
       </div>
       <router-link to="/city">
-      <div class="header-right">{{this.city}}
+      <div class="header-right">
+        {{this.$store.state.city}}
         <span class="iconfont arrow-icon">&#xe6aa;</span>
       </div>
       </router-link>
@@ -27,14 +28,11 @@
 </template>
 <script>
 export default {
-  name:"login", 
-  props: {
-    city: String
-  },
+  name:"login",
   data(){
     return{
       imgList:[
-        {
+        { 
           name:"img1",
           url:'http://img1.qunarzz.com/piao/fusion/1801/1a/94428c6dea109402.jpg_640x200_2cf590d8.jpg'
         },

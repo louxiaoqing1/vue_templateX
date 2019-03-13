@@ -10,7 +10,7 @@ import 'styles/iconfont.css'
 import App from './App'
 import router from './router'
 import FastClick from 'fastclick'
-
+import store from './store'
 
 Vue.use(ElementUI);
 Vue.config.productionTip = false
@@ -24,6 +24,7 @@ axios.defaults.baseURL = "http://localhost:8080/"
 new Vue({
   el: '#app',
   router,
+  store,
   components: { App },
   template: '<App/>'
 })

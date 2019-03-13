@@ -1,7 +1,7 @@
 <template>
   <div>
     <headerX></headerX>
-    <login :city="city"></login>
+    <login></login>
     <icons :list="iconList"></icons>
     <recommend :list="recommendList"></recommend>
     <weekend :list="weekendList"></weekend>
@@ -26,7 +26,6 @@ export default {
   },
   data () {
     return{
-      city: '',
       iconList: [],
       recommendList: [],
       weekendList: []
@@ -40,8 +39,7 @@ export default {
     getHomeInfoSucc(res) {
         res = res.data
         if(res.ret && res.data){
-          const data = res.data
-            this.city = data.city
+            const data = res.data
             this.iconList = data.iconList
             this.recommendList = data.recommendList
             this.weekendList = data.weekendList
